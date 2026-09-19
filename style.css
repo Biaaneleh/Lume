@@ -1,0 +1,854 @@
+/* ========================================
+   IDENTIDADE VISUAL BASE DO LUME
+   ======================================== */
+
+/* Defini a identidade visual principal do projeto */
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #F8F5FC;
+
+    color: #5B3A8E;
+
+}
+
+
+/* ========================================
+   CABEÇALHO
+   ======================================== */
+
+/* Criei o cabeçalho com os dois caminhos principais */
+
+.cabecalho {
+
+    width: 100%;
+
+    padding: 25px 0;
+
+}
+
+
+.cabecalho nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.cabecalho button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #5B3A8E;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+}
+
+
+/* Coloquei destaque aqua na página que estiver ativa */
+
+.nav-inicio.ativo,
+.nav-lume.ativo {
+
+    background-color: #BDEFE8;
+
+    color: #5B3A8E;
+
+}
+
+
+/* Coloquei o mesmo destaque ao passar o mouse */
+
+.nav-inicio:hover,
+.nav-lume:hover {
+
+    background-color: #BDEFE8;
+
+    color: #5B3A8E;
+
+}
+
+
+/* ========================================
+   CONTROLE DAS PÁGINAS
+   ======================================== */
+
+#pagina-inicial {
+
+    display: block;
+
+}
+
+
+#pagina-lume {
+
+    display: none;
+
+}
+
+
+/* ========================================
+   PÁGINA INICIAL
+   ======================================== */
+
+#pagina-inicial {
+
+    max-width: 1100px;
+
+    margin: 70px auto 0;
+
+    padding: 0 40px;
+
+}
+
+
+#pagina-inicial h1 {
+
+    width: 520px;
+
+    margin: 0 40px 30px auto;
+
+    font-size: 38px;
+
+    text-align: left;
+
+}
+
+
+.conteudo-home {
+
+    width: 520px;
+
+    margin-left: auto;
+
+    margin-right: 40px;
+
+}
+
+
+#pagina-inicial > .conteudo-home > p {
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    text-align: left;
+
+    margin: 12px 0;
+
+}
+
+
+/* ========================================
+   MASCOTE DA PÁGINA INICIAL
+   ======================================== */
+
+.mascote-home {
+
+    position: absolute;
+
+    left: 25%;
+
+    top: 50px;
+
+    transform: translateX(-50%);
+
+}
+
+
+.mascote-home img {
+
+    width: 650px;
+
+    height: auto;
+
+}
+
+
+/* ========================================
+   BOTÃO CONVERSE COM O LUME
+   ======================================== */
+
+.botao-conversar {
+
+    display: block;
+
+    margin: 70px auto 0;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #E8DDF5;
+
+    color: #5B3A8E;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.botao-conversar:hover {
+
+    background-color: #BDEFE8;
+
+}
+
+
+/* ========================================
+   INFORMAÇÃO E INCLUSÃO
+   ======================================== */
+
+.informacao {
+
+     width: 520px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 100px;
+
+}
+
+
+.informacao h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+    text-align: left;
+
+}
+
+
+.informacao p {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    text-align: left;
+
+    margin: 0;
+
+}
+
+
+/* ========================================
+   PÁGINA DO LUME
+   ======================================== */
+
+#pagina-lume {
+
+    text-align: center;
+
+    padding: 20px 30px;
+
+}
+
+
+.lume-introducao {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 50px;
+
+}
+
+
+.mascote-lume img {
+
+    width: 240px;
+
+    height: auto;
+
+}
+
+
+.texto-introducao {
+
+    text-align: left;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transform: translateY(35px);
+
+}
+
+
+.lume-introducao h1 {
+
+    color: #5B3A8E;
+
+    margin: 0 0 5px 0;
+
+}
+
+
+/* ========================================
+   ÁREA DA CONVERSA
+   ======================================== */
+
+/* Mantive o tamanho fixo do espaço de conversa */
+
+.area-conversa {
+
+    position: relative;
+
+    width: 700px;
+
+    height: 450px;
+
+    margin: 40px auto 20px;
+
+    background-color: #DCCCF0;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+}
+
+
+/* ========================================
+   HISTÓRICO DA CONVERSA
+   ======================================== */
+
+/* Criei uma área própria para guardar todas as mensagens */
+
+.historico-conversa {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    padding-bottom: 100px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+}
+
+
+/* ========================================
+   BALÃO DO LUME
+   ======================================== */
+
+/* Mantive os balões do Lume brancos e alinhados à esquerda */
+
+.mensagem-lume {
+
+    display: table;
+
+    max-width: 85%;
+
+    margin: 20px;
+
+    padding: 12px 18px;
+
+    background-color: white;
+
+    color: #5B3A8E;
+
+    border-radius: 18px;
+
+    font-size: 16px;
+
+    line-height: 1.35;
+
+    text-align: left;
+
+}
+
+
+/* O primeiro balão começa um pouco mais abaixo */
+
+.historico-conversa > .mensagem-lume:first-child {
+
+    margin-top: 45px;
+
+}
+
+
+/* ========================================
+   BALÃO DO USUÁRIO
+   ======================================== */
+
+/* Coloquei as mensagens do usuário no lado direito */
+
+.mensagem-usuario {
+
+    display: table;
+
+    max-width: 75%;
+
+    margin: 20px 20px 20px auto;
+
+    padding: 12px 18px;
+
+    background-color: #BDEFE8;
+
+    color: #5B3A8E;
+
+    border-radius: 18px;
+
+    font-size: 16px;
+
+    line-height: 1.35;
+
+    text-align: left;
+
+}
+
+
+/* ========================================
+   CAMPO DE PERGUNTA
+   ======================================== */
+
+.campo-pergunta {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 85%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    padding: 8px 12px;
+
+    box-sizing: border-box;
+
+}
+
+
+.campo-pergunta input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #5B3A8E;
+
+    font-size: 16px;
+
+    padding: 10px 15px;
+
+}
+
+
+.campo-pergunta input::placeholder {
+
+    color: #5B3A8E;
+
+}
+
+
+.campo-pergunta button {
+
+    border: none;
+
+    background: #E8DDF5;
+
+    color: #5B3A8E;
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+
+.campo-pergunta button.ativo {
+
+    background-color: #BDEFE8;
+
+}
+
+
+/* ========================================
+   BOTÕES DE CONFIRMAÇÃO
+   ======================================== */
+
+/* Coloquei as opções como uma lista ligada à fala do Lume */
+
+.botoes-confirmacao {
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 15px 20px 20px;
+
+}
+
+
+.botoes-confirmacao button {
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    background-color: white;
+
+    color: #5B3A8E;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+}
+
+
+.botoes-confirmacao button:hover {
+
+    background-color: #BDEFE8;
+
+}
+
+
+.botoes-confirmacao button.selecionado {
+
+    background-color: #BDEFE8;
+
+}
+
+
+/* ========================================
+   LISTA DE CATEGORIAS
+   ======================================== */
+
+/* Mantive as categorias como uma lista de opções do Lume */
+
+.botoes-categorias {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 15px 20px 20px;
+
+}
+
+
+.botoes-categorias button {
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    background-color: white;
+
+    color: #5B3A8E;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+}
+
+
+.botoes-categorias button:hover {
+
+    background-color: #BDEFE8;
+
+}
+
+
+.botoes-categorias button.selecionado {
+
+    background-color: #BDEFE8;
+
+}
+
+
+.botoes-categorias button:disabled {
+
+    cursor: default;
+
+    opacity: 1;
+
+}
+
+
+/* ========================================
+   LISTA DE PERGUNTAS
+   ======================================== */
+
+/* Usei o mesmo padrão visual para as perguntas */
+
+.botoes-perguntas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 15px 20px 20px;
+
+}
+
+
+.botoes-perguntas button {
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    background-color: white;
+
+    color: #5B3A8E;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    max-width: 90%;
+
+}
+
+
+.botoes-perguntas button:hover {
+
+    background-color: #BDEFE8;
+
+}
+
+
+.botoes-perguntas button.selecionado {
+
+    background-color: #BDEFE8;
+
+}
+
+
+.botoes-perguntas button:disabled {
+
+    cursor: default;
+
+    opacity: 1;
+
+}
+
+
+/* ========================================
+   OPÇÕES FINAIS
+   ======================================== */
+
+/* Mantive as opções de continuar ou encerrar no mesmo padrão */
+
+.botoes-finais {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 15px 20px 20px;
+
+}
+
+
+.botoes-finais button {
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    background-color: white;
+
+    color: #5B3A8E;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+}
+
+
+.botoes-finais button:hover {
+
+    background-color: #BDEFE8;
+
+}
+
+
+/* ========================================
+   BOTÃO DE ENCERRAR
+   ======================================== */
+
+.botao-encerrar {
+
+    padding: 12px 30px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #E8DDF5;
+
+    color: #5B3A8E;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.botao-encerrar:hover {
+
+    background-color: #BDEFE8;
+
+}
+
+
+/* ========================================
+   BOTÃO DE REINICIAR
+   ======================================== */
+
+.botao-encerrar.reiniciar {
+
+    background-color: #E8DDF5;
+
+}
+
+
+.botao-encerrar.reiniciar:hover {
+
+    background-color: #BDEFE8;
+
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .area-conversa {
+
+        width: 90%;
+
+    }
+
+    .mascote-home {
+
+        display: none;
+
+    }
+
+    #pagina-inicial h1,
+    .conteudo-home {
+
+        width: auto;
+
+        margin-left: 20px;
+
+        margin-right: 20px;
+
+    }
+
+    .lume-introducao {
+
+        gap: 20px;
+
+    }
+
+    .mascote-lume img {
+
+        width: 160px;
+
+    }
+
+}
